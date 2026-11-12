@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery | Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="images/bakery-logo_c.png"
+                alt="North Star Bakery Logo featuring a picture of a loaf of sourdough bread" width="200">
+            <h1 class="title">North Star Bakery</h1>
+        </div>
+        <nav class="bakery-nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-form">
+            <div class="contact-text">
+                <p>We would love to hear from you! Whether you have questions about our products, want to place a pre-order,
+                or just want to say hello, please fill out the form below and we will get back to you as soon as
+                possible.
+                </p>
+            </div>
+            <h2 class="highlight">Contact Us or Place a Pre-order</h2>
+            <form action="submit_request.php" method="POST">
+                <fieldset>
+                    <legend><b>Contact Information</b></legend>
+                    <label for="contactEmail">Email:</label>
+                    <input type="email" id="contactEmail" name="email" placeholder="email@domain.com" required>
+                    <br><br>
+                    <label for="full_name">Name:</label>
+                    <input type="text" id="full_name" name="full_name" placeholder="John Doe" minlength="2" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><b>Request and Questions</b></legend>
+                    <br>
+                    <label for="request_type">Request Type:</label>
+                    <select id="request_type" name="request_type" required>
+                        <option value="">-- Choose a request type --</option>
+                        <option value="pre_order">Pre-order</option>
+                        <option value="general_question">General Question</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="pickup_date">Pickup Date:</label>
+                    <br>
+                    <input type="date" id="pickup_date" name="pickupDate" required>
+                    <br>
+                    <br>
+                    <label for="allergy_notes">Allergy Notes (Optional):</label>
+                    <br>
+                    <textarea id="allergy_notes" name="allergy_notes" rows="3" cols="40" maxlength="200"
+                        placeholder="List any food allergies or dietary restrictions."></textarea>
+                    <br><br>
+                    <label for="item_details">Item Details or Questions:</label>
+                    <br>
+                    <textarea id="item_details" name="itemDetails" rows="4" cols="40"
+                        placeholder="Tell us any additional details about your order or any questions."
+                        required></textarea>
+                    <br>
+                </fieldset>
+                <br>
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+        <section class="contact-section">
+            <h2 class="highlight">Contact Us</h2>
+            <p>
+                <strong>Hours of Operation:</strong><br>
+                Monday-Saturday: 6:00 AM-6:00 PM
+                <br>
+                Sunday: Closed
+                <br>
+            </p>
+            <p>
+                <strong>Address:</strong>
+            </p>
+            <address>
+                123 Bakery Street<br>
+                Tampa, FL 33602
+            </address>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>North Star Bakery — Where Quality Meets Passion
+            <br>
+            Copyright © 2026 North Star Bakery. All rights reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

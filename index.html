@@ -1,22 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>My Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Star Bakery | Home</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-<h1>My Favorite Activities</h1>
-<p>I enjoy spending time outdoors and learning new skills.</p>
+    <header>
+        <div class="header-logo">
+            <img src="images/bakery-logo_c.png"
+                alt="North Star Bakery Logo featuring a picture of a loaf of sourdough bread" width="200">
 
-<h2>Photography</h2>
-<p><strong>Photography</strong> allows me to capture meaningful moments.</p>
+            <h1 class="title">North Star Bakery</h1>
+        </div>
+        <nav class="bakery-nav-links">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-container">
+            <h2 class="highlight">
+                Welcome to your neighborhood bakery, where quality meets passion.
+            </h2>
+            <p>We take pride in our artisanal approach to baking, using traditional methods and locally sourced
+                ingredients to create delicious baked goods that bring people together.</p>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2 class="highlight">What We're Known For</h2>
+            <p>
+                At North Star Bakery, we take pride in our artisanal
+                approach to baking. Our signature sourdough bread is
+                crafted with care, using traditional methods that have
+                been passed down through generations. Each loaf is baked
+                to perfection, resulting in a crusty exterior and a soft,
+                flavorful interior.
+            </p>
+            <img src="images/bakery-storefront_c.png" alt="North Star Bakery storefront" width="500">
+            <br>
+            <audio src="media/bakery-welcome_c.mp3" controls preload="metadata">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        <section>
+            <h2 class="highlight">Our Products</h2>
+            <p>We offer a wide range of baked goods, including:</p>
+            <ul>
+                <li><i>Artisan Breads</i></li>
+                <li><i>Pastries and Croissants</i></li>
+                <li><i>Cakes and Cupcakes</i></li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="highlight">Ask us about this week's featured item!</h2>
+            <figure>
+                <picture>
+                    <source media="(max-width: 500px)" srcset="images/bakery-feature-small_c.png">
 
-<h2>Hiking</h2>
-<p>Hiking helps me stay active and explore new places.</p>
-<ul>
-<li>Mountain trails</li>
-<li>Forest paths</li>
-<li>National parks</li>
-</ul>
+                    <img src="images/bakery-feature-large_c.png"
+                        alt="A selection of freshly baked goods on display in the bakery" width="500">
+                </picture>
+                <figcaption>
+                    Come try our weekly featured item, including our signature sourdough bread!</figcaption>
+            </figure>
+        </section>
+        <section class="contact-section">
+            <h2 class="highlight">Contact Us</h2>
+            <p>
+                <strong>Hours of Operation:</strong><br>
+                Monday-Saturday: 6:00 AM-6:00 PM
+                <br>
+                Sunday: Closed
+                <br>
+            </p>
+            <p>
+                <strong>Address:</strong>
+            </p>
+            <address>
+                123 Bakery Street<br>
+                Tampa, FL 33602
+            </address>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>North Star Bakery — Where Quality Meets Passion
+            <br>
+            Copyright © 2026 North Star Bakery. All rights reserved.
+        </p>
+    </footer>
 </body>
+
 </html>
